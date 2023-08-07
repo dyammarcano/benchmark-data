@@ -20,8 +20,8 @@ Dentro de uma thred na aplicação é executado um incremento em memória de 1MB
 
 | Aplicação | Tempo de início | Tempo de término | Tempo de execução | Memoria inicio| Memoria termino | Memória utilizada | CPU inicio | CPU termino | CPU utilizada |
 |-----------|-----------------|------------------|-----------|---------------|-----------------|-------------------|------------|-------------|---------------|
-| `Java`      | `18:31:00`        | `18:44:00`         | `13 minutos` | `3.75 GB`       | `4.3 GB`          | `4.3 GB`            | `98%`       | `102%`        | `102% `         |
-| `GoLang`    | `18:54:00`        | `18:58:00`         | `4 minutos`  | `3.52 GB`       | `3.76 GB`         | `3.76 GB`           | `9.90%`     | `19.20%`      | `19.20%`        |
+| Java      | 18:31:00        | 18:44:00         | 13 minutos | 3.75 GB       | 4.3 GB          | 4.3 GB            | 98%       | 102%        | 102%          |
+| GoLang    | 18:54:00        | 18:58:00         | 4 minutos  | 3.52 GB       | 3.76 GB         | 3.76 GB           | 9.90%     | 19.20%      | 19.20%        |
 
 ## Comparação de desempenho
 
