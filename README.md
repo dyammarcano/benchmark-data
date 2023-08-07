@@ -1,2 +1,77 @@
-# benchmark-data
-benchmark data java x golang
+# Teste de carga Java x Golang
+
+## Objetivo
+
+O objetivo deste teste é comparar o desempenho de uma aplicação escrita em Java e outra escrita em GoLang.
+
+Lembrando que o objetivo não é comparar as linguagens, mas sim o desempenho das aplicações.
+
+Para isolamento do teste, foi criado um container para cada aplicação, assim o teste é executado num ambiente controlado.
+
+## Aplicação
+
+A aplicação é bem simples, ela consiste dois endpoints que mostra o número de iteracoes de um ‘loop’.
+
+O intuito é testar o desempenho de uma aplicação que faz um processamento mais pesado.
+
+Dentro de uma thred na aplicação é executado um incremento em memória de 1MB ate chegar a 1GB logo é resetado para 1MB e assim sucessivamente.
+
+## Resultados
+
+| Aplicação | Tempo de início | Tempo de término | Tempo de execução | Memoria inicio| Memoria termino | Memória utilizada | CPU inicio | CPU termino | CPU utilizada |
+|-----------|-----------------|------------------|-----------|---------------|-----------------|-------------------|------------|-------------|---------------|
+| `Java`      | `18:31:00`        | `18:44:00`         | `13 minutos` | `3.75 GB`       | `4.3 GB`          | `4.3 GB`            | `98%`       | `102%`        | `102% `         |
+| `GoLang`    | `18:54:00`        | `18:58:00`         | `4 minutos`  | `3.52 GB`       | `3.76 GB`         | `3.76 GB`           | `9.90%`     | `19.20%`      | `19.20%`        |
+
+## Comparação de desempenho
+
+```mermaid
+pie title Uso de recursos
+    "Java Load Test" : 13
+    "GoLang Load Test" : 4
+```
+
+## Conclusão
+
+A aplicação escrita em GoLang teve um desempenho muito superior à aplicação escrita em Java, tanto em tempo de execução quanto em consumo de memória e CPU.
+
+Lembre-se que o objetivo não é comparar as linguagens, mas sim o desempenho das aplicações.
+
+Cenarios diferentes podem ter resultados diferentes, isso inclui posibilidade de resultados opostos.
+
+## Como executar
+
+Todo o codigo fonte está disponivel no repositorio.
+
+## Imagens de análise de desempenho
+
+### Java
+
+![Java](Captura%20de%20tela%202023-08-07%20184616.png)
+
+### GoLang
+
+![GoLang](Captura%20de%20tela%202023-08-07%20185854.png)
+
+## Codigos fontes
+
+### Java
+
+| Language | Files | Lines | Code | Comments | Blanks |
+|----------|-------|-------|------|----------|--------|
+| Batch     | 1     | 205     | 169      | 0        | 36     |
+| Dockerfile| 1     | 22      | 8        | 6        | 8      |
+| Java      | 4     | 83      | 64       | 1        | 18     |
+| Markdown  | 1     | 19      | 0        | 12       | 7      |
+| Shell     | 1     | 308     | 214      | 64       | 30     |
+| Plain Text| 2     | 4       | 0        | 4        | 0      |
+| XML       | 2     | 123     | 119      | 0        | 4      |
+| Total     | 12    | 764     | 574      | 87       | 103    |
+
+### GoLang
+
+| Language | Files | Lines | Code | Comments | Blanks |
+|----------|-------|-------|------|----------|--------|
+| Dockerfile| 1     | 19      | 9        | 2        | 8      |
+| Go       | 1     | 77      | 65       | 0        | 12     |
+| Total    | 3     | 96      | 74       | 2        | 20     |
