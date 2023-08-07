@@ -62,11 +62,10 @@ Todo o codigo fonte está disponivel no repositorio.
 | Batch     | 1     | 205     | 169      | 0        | 36     |
 | Dockerfile| 1     | 22      | 8        | 6        | 8      |
 | Java      | 4     | 83      | 64       | 1        | 18     |
-| Markdown  | 1     | 19      | 0        | 12       | 7      |
 | Shell     | 1     | 308     | 214      | 64       | 30     |
 | Plain Text| 2     | 4       | 0        | 4        | 0      |
 | XML       | 2     | 123     | 119      | 0        | 4      |
-| Total     | 12    | 764     | 574      | 87       | 103    |
+| Total     | 11    | 745     | 574      | 75       | 96    |
 
 ### GoLang
 
