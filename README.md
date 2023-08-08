@@ -63,6 +63,16 @@ Se nota que a imagem do Java é bem maior que a do GoLang, isso se deve ao fato 
 
 ## Resumo a nivel de codigo, do que esta dentro de cada projeto
 
+No resumo siguinte é possivel ver que a aplicação escrita em GoLang tem menos linhas de codigo que a aplicação escrita em Java.
+
+Isso equivale a menos tempo de desenvolvimento e menos manutenção.
+
+### Percentual de linhas de codigo
+
+Java = 48.3%
+Go = 37.4%
+Outros = 14.3%
+
 ### Java
 
 | Language | Files | Lines | Code | Comments | Blanks |
