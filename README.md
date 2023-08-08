@@ -14,7 +14,7 @@ A aplicação é bem simples, ela consiste dois endpoints que mostra o número d
 
 O intuito é testar o desempenho de uma aplicação que faz um processamento mais pesado.
 
-Dentro de uma thred na aplicação é executado um incremento em memória de 1MB ate chegar a 1GB logo é resetado para 1MB e assim sucessivamente.
+Numa thred na aplicação é executado um ‘buffer’ em memória de 1MB, este vai a incrementar em etapas 1MB ate chegar a 1GB logo é esvaceado para 1MB e assim sucessivamente, com isso é possivel ver o consumo de memória da aplicação e o uso de CPU.
 
 ## Resultados
 
@@ -37,6 +37,8 @@ A aplicação escrita em GoLang teve um desempenho muito superior à aplicação
 
 Lembre-se que o objetivo não é comparar as linguagens, mas sim o desempenho das aplicações.
 
+###### Observação:
+
 Cenarios diferentes podem ter resultados diferentes, isso inclui posibilidade de resultados opostos.
 
 ## Como executar
@@ -44,6 +46,12 @@ Cenarios diferentes podem ter resultados diferentes, isso inclui posibilidade de
 Todo o codigo fonte está disponivel no repositorio.
 
 ## Imagens de análise de desempenho
+
+### Tamanho das imagens
+
+![img.png](img.png)
+
+Se nota que a imagem do Java é bem maior que a do GoLang, isso se deve ao fato de que a imagem do Java contem o JRE e a do GoLang não.
 
 ### Java
 
@@ -53,7 +61,7 @@ Todo o codigo fonte está disponivel no repositorio.
 
 ![GoLang](Captura%20de%20tela%202023-08-07%20185854.png)
 
-## Codigos fontes
+## Resumo a nivel de codigo, do que esta dentro de cada projeto
 
 ### Java
 
