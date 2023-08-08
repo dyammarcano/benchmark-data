@@ -49,17 +49,17 @@ Todo o codigo fonte está disponivel no repositorio.
 
 ### Tamanho das imagens
 
-![img.png](img.png)
+![img.png](img/img1.png)
 
 Se nota que a imagem do Java é bem maior que a do GoLang, isso se deve ao fato de que a imagem do Java contem o JRE e a do GoLang não.
 
 ### Java
 
-![Java](Captura%20de%20tela%202023-08-07%20184616.png)
+![Java](img/img2.png)
 
 ### GoLang
 
-![GoLang](Captura%20de%20tela%202023-08-07%20185854.png)
+![GoLang](img/img3.png)
 
 ## Resumo a nivel de codigo, do que esta dentro de cada projeto
 
